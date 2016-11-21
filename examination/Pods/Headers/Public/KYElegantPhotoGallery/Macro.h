@@ -1,0 +1,1 @@
+../../../KYElegantPhotoGallery/KYElegantPhotoGallery-Demo/Classes/Helpers/Macro.h

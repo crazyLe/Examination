@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MHFisrtTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时段:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwO-7R-X8X">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="SXw-Ln-ehd"/>
+                            <constraint firstAttribute="height" constant="16" id="eWM-xB-scI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00~09:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-La-Aj6">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99607843139999996" green="0.60392156860000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQs-7t-8o7">
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xO4-nP-STk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cQs-7t-8o7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="8KJ-BP-Uwf"/>
+                    <constraint firstItem="sqN-La-Aj6" firstAttribute="height" secondItem="CwO-7R-X8X" secondAttribute="height" id="FhO-3v-ahO"/>
+                    <constraint firstAttribute="bottom" secondItem="CwO-7R-X8X" secondAttribute="bottom" constant="14" id="G5q-Gc-WiX"/>
+                    <constraint firstItem="cQs-7t-8o7" firstAttribute="top" secondItem="CwO-7R-X8X" secondAttribute="bottom" constant="13" id="HeI-HZ-4n8"/>
+                    <constraint firstItem="CwO-7R-X8X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="JYC-qW-SGB"/>
+                    <constraint firstItem="sqN-La-Aj6" firstAttribute="leading" secondItem="CwO-7R-X8X" secondAttribute="trailing" constant="10" id="Pa3-Xv-Szw"/>
+                    <constraint firstItem="sqN-La-Aj6" firstAttribute="centerY" secondItem="CwO-7R-X8X" secondAttribute="centerY" id="bSv-SA-0At"/>
+                    <constraint firstItem="CwO-7R-X8X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="e6e-KF-G01"/>
+                    <constraint firstAttribute="trailing" secondItem="cQs-7t-8o7" secondAttribute="trailing" constant="29" id="fsC-Bg-oiW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sqN-La-Aj6" secondAttribute="trailing" constant="29" id="ix9-UJ-ukE"/>
+                    <constraint firstItem="sqN-La-Aj6" firstAttribute="leading" secondItem="CwO-7R-X8X" secondAttribute="trailing" constant="8" id="nHo-nu-YHe"/>
+                    <constraint firstAttribute="bottom" secondItem="cQs-7t-8o7" secondAttribute="bottom" id="xP5-sc-r8a"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="nHo-nu-YHe"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="timeLabel" destination="sqN-La-Aj6" id="Cu8-Ep-RLd"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

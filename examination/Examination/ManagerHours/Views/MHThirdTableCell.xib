@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fYd-Pi-ud9" customClass="MHThirdTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fYd-Pi-ud9" id="P2c-jJ-BT4">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教练:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBF-bq-7fd">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="7oB-5d-ePY"/>
+                            <constraint firstAttribute="width" constant="35" id="l3h-9c-AeC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ka-Dj-OeB">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="0kp-Xk-7QF"/>
+                            <constraint firstAttribute="width" constant="65" id="igb-bI-y5n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="提供" image="manager_orange1">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickFirstBtn:" destination="fYd-Pi-ud9" eventType="touchUpInside" id="NkL-0a-Rvy"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agS-cJ-xBS">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="HM9-cE-PUC"/>
+                            <constraint firstAttribute="height" constant="16" id="p5q-XT-AY9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="不提供" image="manager_gray1">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickSecondBtn:" destination="fYd-Pi-ud9" eventType="touchUpInside" id="Ocd-O1-O6N"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZL-Rg-pBR">
+                        <color key="backgroundColor" red="0.7843137255" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="NR2-lC-I8W"/>
+                            <constraint firstAttribute="height" constant="0.5" id="pja-Kp-QzH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NR2-lC-I8W"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gZL-Rg-pBR" firstAttribute="leading" secondItem="P2c-jJ-BT4" secondAttribute="leading" constant="26" id="0de-aa-MzK"/>
+                    <constraint firstItem="8Ka-Dj-OeB" firstAttribute="leading" secondItem="TBF-bq-7fd" secondAttribute="trailing" constant="7" id="B9M-TV-ajb"/>
+                    <constraint firstItem="TBF-bq-7fd" firstAttribute="leading" secondItem="P2c-jJ-BT4" secondAttribute="leading" constant="26" id="CLZ-O2-uD5"/>
+                    <constraint firstAttribute="trailing" secondItem="agS-cJ-xBS" secondAttribute="trailing" constant="23" id="HwP-9k-w2k"/>
+                    <constraint firstItem="8Ka-Dj-OeB" firstAttribute="centerY" secondItem="TBF-bq-7fd" secondAttribute="centerY" id="RxX-DC-Rb6"/>
+                    <constraint firstItem="TBF-bq-7fd" firstAttribute="top" secondItem="P2c-jJ-BT4" secondAttribute="top" constant="14" id="TK5-s8-gdu"/>
+                    <constraint firstItem="agS-cJ-xBS" firstAttribute="centerY" secondItem="TBF-bq-7fd" secondAttribute="centerY" id="a4f-iS-ERe"/>
+                    <constraint firstAttribute="bottom" secondItem="gZL-Rg-pBR" secondAttribute="bottom" id="k1k-KH-IE3"/>
+                    <constraint firstAttribute="trailing" secondItem="gZL-Rg-pBR" secondAttribute="trailing" constant="23" id="n7z-n0-sms"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstBtn" destination="8Ka-Dj-OeB" id="sos-d3-Clq"/>
+                <outlet property="secondBtn" destination="agS-cJ-xBS" id="fuE-Yv-FCY"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="289"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="manager_gray1" width="15" height="15"/>
+        <image name="manager_orange1" width="15" height="15"/>
+    </resources>
+</document>

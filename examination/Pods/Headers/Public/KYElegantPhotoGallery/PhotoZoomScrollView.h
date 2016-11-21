@@ -1,0 +1,1 @@
+../../../KYElegantPhotoGallery/KYElegantPhotoGallery-Demo/Classes/PhotoGalleryScrollView/PhotoZoomScrollView.h
